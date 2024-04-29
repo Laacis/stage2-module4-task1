@@ -20,4 +20,7 @@ public class ThreadSafeSingleton {
 
         return result;
     }
+    public static boolean isNull() {
+        return instance == null;
+    }
 }
