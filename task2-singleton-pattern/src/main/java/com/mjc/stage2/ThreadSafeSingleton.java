@@ -1,8 +1,7 @@
 package com.mjc.stage2;
 
 public class ThreadSafeSingleton {
-    // Write your code here!
-    public  static  ThreadSafeSingleton instance = null;
+    public  static volatile ThreadSafeSingleton instance = null;
     private static final Object mutex = new Object();
 
     private ThreadSafeSingleton() {}
