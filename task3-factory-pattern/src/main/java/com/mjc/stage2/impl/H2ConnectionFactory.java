@@ -10,7 +10,7 @@ import java.util.Properties;
 
 public class H2ConnectionFactory implements ConnectionFactory {
     private static final String PROP_FILE = "h2database.properties";
-    private Connection connection = null;
+    private volatile Connection connection = null;
 
     @Override
     public Connection createConnection() {
