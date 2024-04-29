@@ -104,8 +104,8 @@ public class Employee {
             return this;
         }
 
-        public Employee build() throws Exception {
-            if (employee.getName() == null || employee.getLastName() == null || employee.getPosition() == null || employee.getEmail() == null || employee.getCarNumber() == null ) {
+        public Employee build() {
+            if (employee.getName() == null || employee.getLastName() == null || employee.getPosition() == null || employee.getEmail() == null || employee.getPhone() == null || employee.getCarNumber() == null ) {
                 throw new IllegalStateException("All employee fields must be set before build.");
             }
 
