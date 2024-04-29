@@ -106,7 +106,7 @@ public class Employee {
 
         public Employee build() throws Exception {
             if (employee.getName() == null || employee.getLastName() == null || employee.getPosition() == null || employee.getEmail() == null || employee.getCarNumber() == null ) {
-                throw new Exception("All employee fields must be set before build.");
+                throw new IllegalStateException("All employee fields must be set before build.");
             }
 
             return  employee;
